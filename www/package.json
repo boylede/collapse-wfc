@@ -1,0 +1,30 @@
+{
+  "name": "collapse-wfc-web",
+  "version": "0.1.0",
+  "description": "web-side of collapse-wfc rust crate",
+  "main": "index.js",
+  "bin": {
+    "collapse-wfc-web": ".bin/collapse-wfc-web.js"
+  },
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "keywords": [
+    "webassembly",
+    "wasm",
+    "rust",
+    "webpack"
+  ],
+  "author": "Daniel Boyle <boylede+github@gmail.com>",
+  "license": "(MIT OR Apache-2.0)",
+  "devDependencies": {
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "copy-webpack-plugin": "^5.0.0"
+  },
+  "dependencies": {
+    "collapse-wfc": "file:../pkg"
+  }
+}
